@@ -10,13 +10,14 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <updated>2025-04-08T00:00:00+00:00</updated>
+    <summary>Displays only the citation key in in-text citations (e.g., Baniasadi2020)</summary>
   </info>
 
   <macro name="citation-key">
-    <text variable="citation-key"/>
+    <text variable="citation-label" strip-periods="true"/>
   </macro>
 
-  <citation collapse="citation-number">
+  <citation>
     <layout prefix="(" suffix=")" delimiter=", ">
       <text macro="citation-key"/>
     </layout>
@@ -24,7 +25,7 @@
 
   <bibliography>
     <layout>
-      <text value="References not shown in this style."/>
+      <text value=""/>
     </layout>
   </bibliography>
 </style>
